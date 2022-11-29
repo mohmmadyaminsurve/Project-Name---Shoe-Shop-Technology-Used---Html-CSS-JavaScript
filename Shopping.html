@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flipcard.css">
+<style>
+    body{
+        background-color: crimson;
+        
+    }
+     .link{
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+        }
+
+        .link::after{
+            content: '';
+          display: block;
+            width: 0;
+             height: 2px;
+            background: white;
+            transition: width .3s;
+        }
+
+        .link:hover::after{
+            width: 100%;
+           cursor: pointer;
+        }
+
+        .nav{
+            overflow: hidden;
+            background-color: crimson;
+            text-align: center;
+            justify-content: center;
+            margin-left: 44px;
+            font-weight: bolder;
+        
+        }
+
+        .nav a {
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            padding: 16px 20px;
+        }
+
+button{
+    border: 2px solid white;
+     background-color: crimson;
+      color: white;
+       font-size: 20px;
+        border-radius: 10px; 
+        padding: 10px;
+        
+}       
+button:hover{
+   box-shadow: 5px 5px 5px black;
+   background-color: white;
+   color: crimson;
+   cursor: pointer;
+}
+
+img:hover{
+    box-shadow: 12px 10px 5px;
+    cursor: pointer;
+}
+
+.flip-box {
+  Background-color: transparent;
+  Width: 300px;
+  Height: 200px;
+  Border: 1px solid #f1f1f1;
+  Perspective: 1000px;
+}
+
+.flip-box-inner {
+  Position: relative;
+  Width: 100%;
+  Height: 100%;
+  Text-align: center;
+  Transition: transform 0.8s;
+  Transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  Transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  Position: absolute;
+  Width: 100%;
+  Height: 100%;
+  -webkit-backface-visibility: hidden;
+  Backface-visibility: hidden;
+}
+
+.flip-box-front {
+  Background-color: #bbb;
+  Color: black;
+}
+
+.flip-box-back {
+  Background-color: #555;
+  Color: white;
+  Transform: rotateY(180deg);
+}
+
+</style>
+</head>
+<body>
+    <br>
+    <div class="nav">
+        <a class="link"  href="Home.html"> Home   </a> 
+        <a class="link"  href="Shopping.html"> Shopping   </a>  
+        <a class="link" href="#"> About us </a>
+        <button onclick="window.location.href = 'Log in form.html'"> Log In</button>
+    </div>
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="e456a8103211209.5f47dea744a23.jpg" style="width: 45%; border-radius: 20px; box-shadow: 4px 4px 8px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="35463b103211209.5f8d57c277188.jpg" style="width: 45%; border-radius: 20px; box-shadow: 4px 4px 8px;"> <br><br><br>
+
+<div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="air-jordan-1-retro-high-og-shoe-PLe8kL.png" style="width: 90%; border-radius: 12px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div class="flip-box-back">
+  <h2>Paris</h2>
+  <p>What an amazing city</p>
+</div>
+</div>
+</div>
+
+<div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="air-zoom-pegasus-39-road-running-shoes-kmZSD6.png" style="width: 300px;border-radius: 12px;height: 200px;padding-left: 450px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div class="flip-box-back">
+  <h2>Paris</h2>
+  <p>What an amazing city</p>
+</div>
+</div>
+</div>
+
+
+<br>
+<br>
+ 
+    
+</body>
+</html>

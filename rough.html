@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .flip-box {
+  Background-color: transparent;
+   width: 45%;
+   height: 100%;
+  Border: 1px solid #f1f1f1;
+  Perspective: 1000px;
+}
+
+.flip-box-inner {
+  Position: relative;
+  Width: 100%;
+  Height: 100%;
+  Text-align: center;
+  Transition: transform 0.8s;
+  Transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  Transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  Position: absolute;
+  Width: 100%;
+  Height: 100%;
+  -webkit-backface-visibility: hidden;
+  Backface-visibility: hidden;
+}
+
+.flip-box-front {
+  Background-color: #bbb;
+  Color: black;
+}
+
+.flip-box-back {
+  Background-color: #555;
+  Color: black;
+  Transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Image Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="air-jordan-1-retro-high-og-shoe-PLe8kL.png" alt=”Paris” style="width: 45%">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>What an amazing city</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
